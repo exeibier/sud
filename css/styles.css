@@ -1,0 +1,530 @@
+/*!
+ * SUD
+ * Version - 1.0
+ * Author: Vannelo - http://vannelo.com
+
+ * - RESOURCES -
+ * COLORS
+ * ACCENT: #EF4260;
+ * ACCENT: #;
+
+*/
+
+/* TIPOGRAFÍA */
+
+/* GENERAL */
+    * {
+        font-family: 'Open Sans', sans-serif;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    h3 {
+        font-size: 30px;
+        border-bottom: 3px solid #3c3c3c;
+        font-weight: 600;
+        color: #3c3c3c;
+        text-align: center;
+        display: inline-block;
+        padding: 20px 20px;
+        margin: 20px 0px;
+    }
+    h4 {
+        font-size: 20px;
+        border-bottom: 2px solid #3c3c3c;
+        font-weight: 600;
+        color: #3c3c3c;
+        text-align: center;
+        display: inline-block;
+        padding: 20px 20px;
+        margin: 20px 0px;
+    }
+    p {
+        color: #3c3c3c;
+        letter-spacing: 1px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+/* MENÚ */
+    .menu-desktop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        z-index: 999;
+        vertical-align: top;
+    }
+    .menu-desktop a {
+        font-size: 14px;
+        color: white;
+        display: inline-block;
+        padding: 15px 40px 5px  40px;
+        letter-spacing: 3px;
+        transition-duration: .2s;
+    }
+    .menu-desktop a:hover {
+        border-bottom: 3px solid white;
+        transition-duration: .2s;
+    }
+
+    .scrolleado {
+        background-color: black;
+        height: 50px;
+    }
+
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 999;
+        padding: 10px 20px;
+    }
+    .menu-mobile .izquierda img {
+        width: 50px;
+    }
+    .menu-mobile .derecha {
+        text-align: right;
+    }
+    .menu-mobile .derecha .burguer {
+        display: inline-block;
+        width: 35px;
+        cursor: pointer;
+    }
+    .menu-mobile .burguer .line {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin: 7px 0px;
+    }
+    .menu-mobile .menu-hidden {
+        display: none;
+    }
+    .menu-mobile .menu-hidden a {
+        display: block;
+        color: white;
+        font-size: 12px;
+        padding: 10px 0px;
+    }
+    .menu-mobile .menu-hidden .redes {
+        text-align: center;
+    }
+    .menu-mobile .menu-hidden .redes a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .menu-desktop ul {
+        position: relative;
+        display: inline-block;
+    }
+    .menu-desktop li {
+        list-style: none;
+    }
+    .menu-desktop .submenu {
+        display: none;
+        position: absolute;
+        left: -10px;
+    }
+    .menu-desktop .submenu-trigger:hover .submenu {
+        display: block;
+    }
+    .headerMenu{
+        height: 50px;
+        background: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        z-index: 999;
+        vertical-align: top;
+    }
+    .headerMenu a {
+        font-size: 14px;
+        color: white;
+        display: inline-block;
+        padding: 15px 40px 5px  40px;
+        letter-spacing: 3px;
+        transition-duration: .2s;
+    }
+    .headerMenu a:hover {
+        border-bottom: 3px solid white;
+        transition-duration: .2s;
+    }
+
+/* HEADER */
+    .dandy-header {
+        position: relative;
+    }
+    .dandy-header .slider {
+
+    }
+    .dandy-header .item {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .dandy-header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: 1;
+    }
+    .dandy-header .contenido {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        text-align: center;
+        padding-top: 37vh;
+    }
+    .dandy-header .contenido img {
+        width: 30%;
+    }
+    .dandy-header .contenido h3 {
+        font-size: 14px;
+        letter-spacing: 6px;
+        margin: 30px 0px;
+        color: white;
+        border: none;
+    }
+    .dandy-header .anterior {
+        position: absolute;
+        top: 45vh;
+        left: 20px;
+        z-index: 900;
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        transition-duration: .2s;
+    }
+    .dandy-header .anterior:hover {
+        opacity: .5;
+        transition-duration: .2s;
+    }
+    .dandy-header .anterior img {
+        width: 100%;
+    }
+    .dandy-header .siguiente {
+        position: absolute;
+        top: 45vh;
+        right: 20px;
+        z-index: 900;
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        transition-duration: .2s;
+    }
+    .dandy-header .siguiente:hover {
+        opacity: .5;
+        transition-duration: .2s;
+    }
+    .dandy-header .siguiente img {
+        width: 100%;
+    }
+
+
+/* BANNER */
+    .dandy-banner {}
+    .dandy-banner img {
+        width: 100%;
+    }
+
+/* ACERCA */
+    .dandy-acerca {
+        background-color: #efefef;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .dandy-acerca p {
+        font-size: 14px;
+        text-align: justify;
+        color: #3c3c3c;
+    }
+
+/* MENÚ */
+    .dandy-menus {
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .dandy-menus .slider-2 {}
+    .dandy-menus .slider-2 .texto {
+        margin: 20px 0px;
+    }
+    .dandy-menus p {
+        font-size: 14px;
+    }
+    .dandy-menus .slider-2 .imagen {
+        text-align: center;
+        width: 100%;
+    }
+    .dandy-menus .slider-2 img {
+        width: 100%;
+        display: inline-block;
+    }
+    .dandy-menus .slider-3 {
+        margin: 30px 0px;
+    }
+    .dandy-menus .slider-3 img {
+        width: 100%;
+    }
+    .dandy-menus .caja-slider-1 {
+        position: relative;
+    }
+    .dandy-menus .anterior {
+        position: absolute;
+        top: 35vh;
+        left: 20px;
+        z-index: 900;
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        transition-duration: .2s;
+    }
+    .dandy-menus .anterior:hover {
+        opacity: .5;
+        transition-duration: .2s;
+    }
+    .dandy-menus .anterior img {
+        width: 100%;
+    }
+    .dandy-menus .siguiente {
+        position: absolute;
+        top: 35vh;
+        right: 20px;
+        z-index: 900;
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        transition-duration: .2s;
+    }
+    .dandy-menus .siguiente:hover {
+        opacity: .5;
+        transition-duration: .2s;
+    }
+    .dandy-menus .siguiente img {
+        width: 100%;
+    }
+    .slider-2 .item .imagen img.imgMobile{
+        display: none;
+    }
+
+/* CHEFS */
+    .dandy-chef {
+
+    }
+    .dandy-chef .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dandy-chef .col-lg-6 {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    .dandy-chef .izquierda {}
+    .dandy-chef .izquierda img {
+        width: 100%;
+    }
+    .dandy-chef .derecha {
+        background-color: #efefef;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .dandy-chef .texto {
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .dandy-chef p {
+        font-size: 14px;
+    }
+    .dandy-chef .redes {
+        margin: 40px 0px;
+    }
+    .dandy-chef .redes i {
+        font-size: 24px;
+        margin: 10px 20px;
+        color: #3c3c3c;
+    }
+
+/* INSTAGRAM */
+    .dandy-instagram {
+        text-align: center;
+    }
+
+/* CONTACTO */
+    .dandy-contacto {
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .dandy-contacto .redes {
+        margin: 10px 0px;
+    }
+    .dandy-contacto .redes i {
+        font-size: 24px;
+        margin: 10px 20px;
+        color: #3c3c3c;
+    }
+    .dandy-contacto .imagen {
+        margin: 20px 0px;
+    }
+    .dandy-contacto .imagen img {
+        width: 100%;
+    }
+    .dandy-contacto .texto1 {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 6px;
+        margin: 10px 0px;
+    }
+    .dandy-contacto .texto2 {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 6px;
+    }
+    .dandy-contacto a {
+        color: #3c3c3c;
+    }
+    .dandy-contacto .reservar {
+        border: 1px solid #333;
+        border-radius: 0;
+        font-weight: bold;
+        margin-top: 20px;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 12px;
+        transition-duration: .2s;
+    }
+    .dandy-contacto .reservar:hover {
+        background-color: #3c3c3c;
+        color: white;
+        transition-duration: .2s;
+    }
+
+/* FOOTER */
+    .dandy-footer {
+        background-color: #eee;
+        padding: 20px;
+        font-size: 12px;
+        color: #666;
+    }
+    .dandy-footer .derecha {
+        text-align: right;
+    }
+    .dandy-footer button {
+        background-color: transparent;
+        font-size: 12px;
+        border: none;
+        color: #666;
+    }
+
+/* EXTRAS */
+    .modal-dialog {
+        width: 80%;
+        max-width: none !important;
+    }
+
+
+/* RESPONSIVE */
+
+    @media only screen and (max-width: 1000px) {
+        .menu-desktop {
+            display: none;
+        }
+        .menu-mobile {
+            display: block;
+        }
+        .hide-mobile {
+            display: none !important;
+        }
+        .show-mobile {
+            display: block !important;
+        }
+
+        .dandy-header .contenido {
+            width: 80%;
+            left: 10%;
+        }
+        .dandy-header .contenido img {
+            width: 70%;
+        }
+        .flechas {
+            display: none;
+        }
+
+        h3 {
+            font-size: 24px;
+            border-bottom: 3px solid #3c3c3c;
+            font-weight: 600;
+            color: #3c3c3c;
+            text-align: center;
+            display: inline-block;
+            padding: 20px 20px;
+            margin: 20px 0px;
+        }
+        .dandy-chef .texto {
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .dandy-footer {
+            text-align: center;
+        }
+        .dandy-footer .derecha {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .slider-2 .item .imagen img.imgMobile{
+            display: block;
+        }
+
+
+    }
+
+    @media only screen and (min-width: 1000px) {
+
+        .menu-desktop {
+            display: block;
+        }
+        .menu-mobile {
+            display: none;
+        }
+        .hide-mobile {
+            display: block;
+        }
+        .show-mobile {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 2000px) {
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
